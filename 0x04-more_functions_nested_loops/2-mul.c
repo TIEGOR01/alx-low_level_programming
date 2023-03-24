@@ -1,6 +1,7 @@
 #include "main.h"
+
 /**
- * mul - multiply 2 int
+ * mul - multiplies 2 integers
  * @a: first int
  * @b: second int
  * Return: addition of the multiplication
