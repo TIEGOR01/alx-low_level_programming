@@ -2,28 +2,38 @@
 #include <stdio.h>
 
 /**
+ * main - print the numbers 1-100 followed by a new line
  *
+ * Return: 0 (Success)
  */
 
 int main(void)
 {
-	int i;
-	char a[] = "Fizz";
-	char b[] = "Buzz";
-	char ab[] = "FizzBuzz";
+	int x;
 
-	for (i = 1; i <= 100; i++)
+	for (x = 1; x <= 100; x++)
 	{
-		if (i == 100)
-			printf("%s", b);
-		else if ((i % 3 == 0) && (i % 5 == 0))
-			printf("%s", ab);
-		else if (i % 3 == 0)
-			printf("%s", a);
-		else if (i % 5 == 0)
-			printf("%s", b);
+		if ((x % 3 == 0) && (x % 5 == 0))
+		{
+			printf("FizzBuzz");
+		}
+		else if ((x % 3 == 0)
+		{
+			printf("Fizz");
+		}
+		else if (x % 5 == 0)
+		{
+			printf("Buzz");
+		}
 		else
-			printf("%d", i);
+		{
+			printf("%d",x);
+		}
+		if (x != 100)
+		{
+			printf(" ");
+		}
 	}
-	printf('\n');
+	printf('\n')
+	return (0);
 }
