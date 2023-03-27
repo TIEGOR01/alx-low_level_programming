@@ -4,7 +4,7 @@
  * puts_half - function that prints half of a string
  * followed by a new line
  *
- * if number is odd funtion should print 
+ * if number is odd funtion should print
  * n = (length_of_the_string -1) / 2
  *
  * @str: input
