@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * Main - _strspn gets the length of a prefic substring
+ * _strspn - Entry point
  *
  * @s: input
  * @accept: input
  *
- * Return: 0
+ * Return: Always 0 (Success)
  */
 
 unsigned int _strspn(char *s, char *accept)
