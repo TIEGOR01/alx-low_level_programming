@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * Main - _strpbrk dearches a string for any of a set of bytes
+ * _strpbrk - Entry point
  *
  * @s: input
  * @accept: input
  *
- * Return: 0
+ * Return: Always 0 (Success)
  */
 
 char *_strpbrk(char *s, char *accept)

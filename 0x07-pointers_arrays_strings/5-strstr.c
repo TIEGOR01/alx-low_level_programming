@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * Main - _strstr locates a substring
+ * _strstr - Entry point
  *
  * @haystack: input
  * @needle: input
  *
- * Return: 0
+ * Return: Always 0 (Success)
  */
 
 char *_strstr(char *haystack, char *needle)
