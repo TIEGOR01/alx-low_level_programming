@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * Main - print_chessboard prints the chessboard
+ * Print_chessboard - Entry point
  *
  * @a: array
  *
- * Return: 0
+ * Return: Always 0 (Success)
  */
 
 void print_chessboard(char (*a)[0])
@@ -18,4 +18,5 @@ void print_chessboard(char (*a)[0])
 			_putchar(a[i][n]);
 		_putchar('\n');
 	}
+	return (0);
 }
