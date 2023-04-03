@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * Main - _strchr locates a character in a string
+ * _strchr - Entry point
  *
  * @s: input
  * @c: input
  *
- * Return: 0
+ * Return: Always 0 (Suxxess)
  */
 
 char *_strchr(char *s, char c)
@@ -17,7 +17,7 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 
-			retutn (s + i);
+			return (s + i);
 	}
 
 	return (NULL);
