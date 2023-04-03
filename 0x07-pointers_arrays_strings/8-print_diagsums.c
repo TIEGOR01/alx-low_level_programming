@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print diagsums - Entry point
+ * print_diagsums - Entry point
  * @a: input
  * @size: input
  *
