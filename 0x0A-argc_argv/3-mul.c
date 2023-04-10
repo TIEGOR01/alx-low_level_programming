@@ -11,12 +11,7 @@
 
 int _atoi(char *s)
 {
-	int i;
-	int d;
-	int n;
-	int len;
-	int f;
-	int digit;
+	int i, d, n, len, f, digit;
 
 	i = 0;
 	d = 0;
