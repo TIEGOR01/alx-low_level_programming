@@ -22,6 +22,7 @@ int _atoi(char *s)
 
 	while (s[len] != '\0')
 		len++;
+
 	while (i < len && f == 0)
 	{
 		if (s[i] == '-')
@@ -42,6 +43,7 @@ int _atoi(char *s)
 	}
 	if (f == 0)
 		return (0);
+
 	return (n);
 }
 
@@ -51,7 +53,7 @@ int _atoi(char *s)
  * @argc: number of command line arguments
  * @argv: array containing the program command line arguments
  *
- * Return: 0 or 1
+ * Return: 0 (Success) or 1 (Error)
  */
 
 int main(int argc, char *argv[])
@@ -63,9 +65,11 @@ int main(int argc, char *argv[])
                 printf("Error\n");
                 return (1);
         }
+
         num1 = _atoi(argv[1]);
         num2 = _atoi(argv[2]);
         result = num1 * num2;
+
         printf("%d\n", result);
 
         return (0);
