@@ -8,7 +8,7 @@
  *
  * @str: char
  *
- * Return: pointer function returns or NULL if insufficient memory
+ * Return: 0
  */
 
 char *_strdup(char *str)
