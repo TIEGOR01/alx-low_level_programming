@@ -10,7 +10,7 @@
  * Return: Null on failure
  */
 
-int **alloc_grid(int width, int height);
+int **alloc_grid(int width, int height)
 {
 	int **array, i, j;
 	int len = width * height;
