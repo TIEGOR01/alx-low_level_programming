@@ -5,45 +5,45 @@
  * string_nconcat - concatenates two strings
  *
  * @s1: first string
- * @s2: second string
- * @n: index
- * Return: char pointer
+ * @s2: string to concatenate from
+ * @n: number of bytes
+ *
+ * Return: pointer
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *p;
-	unsigned int size1 = 0, size2 = 0, i;
+	char *ptr;
+	unsigned int i = 0, j = 0, size1 = 0, size2 = 0;
 
-	if (s1 == NULL)
-		s1 = "";
-
-	if (s2 == NULL)
-		s2 = "";
-
-	while (s1[size1] != '\0')
-	{
+	while (s1 && s1[size1])
 		size1++;
-	}
-
-	while (s2[size2] != '\0')
-	{
+	while (s2 && s2[size2])
 		size2++;
-	}
 
-	if (p == NULL)
-		return (0);
+	if (n < size2)
+		s = malloc(sizeof(char) * (size1 + n + 1));
+	else
+		s = malloc(sizeof(char) * (size1 + size2 + 1));
 
-	for (i = 0; i < size1; i++)
+	if (!s)
+		return (NULL);
+
+	while (i < size1)
 	{
-		p[i] = s1[i];
+		s[i] = s1[i];
+		i++;
 	}
 
-	for (; i < (size1 + n); i++)
-	{
-		p[i] = s2[i - size1];
-	}
-	p[i] = '\0';
+	while (n < size2 && i < (size1 + n))
+		s[i++] = s2[j++];
 
-	return (p);
+	while (n >= size2 && i < (size1 + size2))
+		s[i++] = s2[j++];
+
+	s[i] = '\0';
+
+	return (s);
 }
+
+
