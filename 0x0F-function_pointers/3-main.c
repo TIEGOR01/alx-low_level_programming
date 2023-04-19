@@ -7,7 +7,7 @@
  * main - performs simple operations
  *
  * @argc: number of arguments supplied
- * @argc: array of pointers
+ * @argv: array of pointers
  *
  * Return: Always 0 (Success)
  */
