@@ -3,16 +3,15 @@
 
 /**
  * array_iterator - executes a function given as a parameter
- * on each element of an array
  *
  * @array: array
- * @size: size printed
- * @action: pointer to print
+ * @size: size of array
+ * @action: pointer to the function
  *
- * Return: void
+ * Return: Nothing
  */
 
-void array_interator(int *array, size_t size, void (*action)(int))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	unsigned int i;
 
