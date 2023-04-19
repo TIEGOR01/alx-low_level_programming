@@ -8,7 +8,7 @@ int op_mod(int a, int b);
 
 /**
  * op_add - returns sum of a and b
- * 
+ *
  * @a: The first number
  * @b: The second number
  *
