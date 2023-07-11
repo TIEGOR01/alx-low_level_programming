@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - adds positive numbers
@@ -7,7 +7,7 @@
  * @argc: number of command line arguments
  * @argv: array containing the program command line arguments
  *
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 
 int main(int argc, char *argv[])
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		printf("0\n")
+		printf("0\n");
 	}
 	return (0);
 }
